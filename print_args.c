@@ -20,7 +20,6 @@ int print_args(const char *format, va_list list)
 
 	if (format == NULL)
 		return (-1);
-
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
@@ -37,11 +36,8 @@ int print_args(const char *format, va_list list)
 				iterate++;
 			}
 			if (iterate == 2)
-			{
 				len += _putchar(format[i + 1]);
-			}
 			i += 2;
-
 		}
 		else
 		{

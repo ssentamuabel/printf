@@ -3,6 +3,7 @@
 
 /* header */
 #include<stdarg.h>
+#include<stdlib.h>
 typedef struct placeholder
 {
 	char cha;
