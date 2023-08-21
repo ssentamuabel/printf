@@ -24,6 +24,8 @@ int print_args(const char *format, va_list list)
 	{
 		if (format[i] == '%')
 		{
+			if (edgetest(format[i + 1]) == -1)
+				return (len = -1);
 			sp = format[i + 1];
 			iterate = 0;
 			while (iterate < 2)
