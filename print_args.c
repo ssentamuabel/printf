@@ -18,7 +18,10 @@ int print_args(const char *format, va_list list)
 		{'s', print_string}
 	};
 
-	while (format[i])
+	if (format == NULL)
+		return (-1);
+
+	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
