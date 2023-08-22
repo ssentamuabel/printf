@@ -38,3 +38,15 @@ int edgetest(char c)
 		return (-1);
 	return (1);
 }
+/**
+ *  print_percent - prints the percentage
+ *  @list: the list
+ *
+ *  Return: int
+ */
+int print_percent(va_list list)
+{
+	(void)list;
+
+	return (_putchar('%'));
+}
